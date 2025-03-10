@@ -1,0 +1,51 @@
+/* Seletor Universal */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Altera o modelo de caixa para incluir bordas e preenchimento no cálculo do tamanho do elemento */
+}
+
+/* TAG header */
+header {
+    background-color: #D3D3D3; /* Define a cor de fundo do cabeçalho como cinza claro */
+    display: flex; /* Utiliza o Flexbox para organizar os itens no cabeçalho */
+    flex-direction: row; /* Organiza os itens em uma linha (horizontalmente) */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-around; /* Distribui os itens de maneira uniforme com espaço entre eles */
+    border-bottom: 3px solid #000000; /* Adiciona uma borda inferior preta de 3px */
+    padding-bottom: 10px; /* Adiciona um preenchimento de 10px na parte inferior do cabeçalho */
+}
+
+/* id logo-header */
+#logo-header {
+    width: 300px; /* Define a largura do logo para 300px */
+}
+
+/* id nav-header */
+#nav-header {
+    display: flex; /* Utiliza o Flexbox para organizar os itens de navegação */
+    flex-direction: row; /* Organiza os itens de navegação em uma linha (horizontalmente) */
+    align-items: center; /* Alinha os itens de navegação verticalmente no centro */
+    justify-content: space-between; /* Distribui os itens de navegação com espaço entre eles */
+    gap: 30px; /* Define um espaço de 30px entre os itens de navegação */
+}
+
+/* class item-nav */
+.item-nav {
+    display: flex; /* Utiliza o Flexbox para organizar os itens dentro de cada seção de navegação */
+    flex-direction: column; /* Organiza os itens verticalmente (em uma coluna) */
+    align-items: center; /* Alinha os itens de navegação horizontalmente no centro */
+    gap: 5px; /* Define um espaço de 5px entre os itens dentro de cada seção de navegação */
+}
+
+/* class icone-item-nav */
+.icone-item-nav {
+    font-size: 30px; /* Define o tamanho do ícone para 30px */
+}
+
+/* class link-item-nav */
+.link-item-nav {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000; /* Define a cor do texto do link como preto */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto do link */
+}
