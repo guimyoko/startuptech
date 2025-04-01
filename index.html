@@ -1,64 +1,305 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<!-- Declaração do tipo de documento e definição do idioma como português do Brasil -->
-
-<head>
+<html lang="pt-br">
+   <!-- Define a codificação do tipo de documento e definição do idioma como português do Brasil -->
+  <head>
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres para UTF-8, permitindo o uso de caracteres especiais -->
+    <!-- Define a codificação de caracteres para UTF-8, permitindo o uso de caracteres epeciais como acentos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Garante que a página seja responsiva em dispositivos móveis -->
+    <!-- Garante que a página seja responsiva, ajustando-se ao tamanho da tela do dispositivo -->
     <meta name="description" content="Landing Page da Startup Tech">
-    <!-- Descrição do conteúdo da página, importante para SEO -->
-    <meta name="keywords" content="Tecnologia, Inovação"> <!-- Palavras-chave para otimização em motores de busca -->
+    <!-- Descrição do site, usada para melhorar o SEO e aparecer nos resultados dos motores de busca-->
+    <meta name="kaywords" content="Tecnologia, Inovação">
+    <!-- Palavras-chave relacionadas ao site, utilizadas para otimização em motores de busca -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Garante que o site seja exibido corretamente em versões mais antigas do Internet Explorer -->
-
-    <title>Startup Tech - Inovação para seu negócio</title> <!-- Título da página exibido na aba do navegador -->
-    <link rel="shortcut icon" href="assets/img/icone.svg" type="image/x-icon">
-    <!-- Favicon (ícone da aba do navegador) -->
-
-    <!-- Importação do Font Awesome para uso de ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Link para o arquivo CSS local para estilização da página -->
+    <!-- Garante compatibilidade com versões mais antigas do Internet Explorer -->
+    <title>Startup Tech - Inovação para seu negócio</title>
+    <!-- Define o título do navegador -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    <!-- Importa a biblioteca Font Awesome para o uso de ícones -->
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body> <!-- Início do corpo da página -->
-    <header> <!-- Cabeçalho da página, geralmente contém logo e navegação -->
-        <img id="logo-header" src="assets/img/logo-bg-transparente.png" alt="Logo da Startup Tech">
-        <!-- Logo da startup -->
-
-        <nav id="nav-header"> <!-- Menu de navegação principal -->
-            <!-- Cada item de navegação é colocado dentro de uma seção -->
-            <section class="item-nav">
-                <i class="fa-solid fa-gear icone-item-nav"></i> <!-- Ícone Font Awesome para serviços -->
-                <a href="" class="link-item-nav">Serviços</a> <!-- Link para a seção de serviços -->
-            </section>
-
-            <section class="item-nav">
-                <i class="fa-solid fa-circle-info icone-item-nav"></i> <!-- Ícone Font Awesome para informações -->
-                <a href="" class="link-item-nav">Sobre</a> <!-- Link para a seção "Sobre" -->
-            </section>
-
-            <section class="item-nav">
-                <i class="fa-regular fa-id-badge icone-item-nav"></i> <!-- Ícone Font Awesome para contato -->
-                <a href="" class="link-item-nav">Contato</a> <!-- Link para a seção de contato -->
-            </section>
-
-            <section class="item-nav">
-                <i class="fa-regular fa-star icone-item-nav"></i> <!-- Ícone Font Awesome para "Comece Agora" -->
-                <a href="" class="link-item-nav">Comece Agora</a> <!-- Link para iniciar com o serviço -->
-            </section>
-        </nav> <!-- Fim da navegação -->
-    </header> <!-- Fim do cabeçalho -->
-
-    <main></main> <!-- Área principal do conteúdo da página (aqui está vazia no momento) -->
-
-    <footer></footer> <!-- Rodapé da página (aqui está vazio no momento) -->
-
-</body> <!-- Fim do corpo da página -->
-
-</html> <!-- Fim do documento HTML -->
+    <!-- Link para a folha de estilos CSS, onde está a esterilização da página -->
+  </head>
+  <body>
+    <!-- Início do corpo da página -->
+    <header>
+      <!-- Cabeçalho da página, geralmente contém o logo e o menu navegação -->
+      <img id="logo-header" src="assets/img/logo-bg-transparente.png" alt="Logo da Startup Tech">
+      <!-- Logo da Startup Tech, exibido no cabeçalho -->
+      <nav id="header-nav">
+        <!-- Menu de navegação dentro do cabeçalho -->
+        <section class="item-nav">
+          <a href class="header-nav-a">
+            <i class="fa-solid fa-house"></i>
+            <!-- Ícone representado "Home" (Página inicial) -->
+            <span>Home</span>
+            <!-- Texto exibido no menu de navegação -->
+          </a>
+        </section>
+        <section class="item-nav">
+          <a href class="header-nav-a">
+            <i class="fa-solid fa-trowel-bricks"></i>
+            <!-- Ícone representado "Serviços" -->
+            <span>Serviços</span>
+            <!-- Texto exibido no menu de navegação -->
+          </a>
+        </section>
+        <section class="item-nav">
+          <a href class="header-nav-a">
+            <i class="fa-solid fa-circle-info"></i>
+            <!-- Ícone representado "Sobre" -->
+            <span>Sobre</span>
+            <!-- Texto exibido no menu de navegação -->
+          </a>
+        </section>
+        <section class="item-nav">
+          <a href class="header-nav-a">
+            <i class="fa-solid fa-at"></i>
+            <!-- Ícone representado "Contato" -->
+            <span>Contato</span>
+            <!-- Texto exibido no menu de navegação -->
+          </a>
+        </section>
+       </nav>
+       <!-- Fim da navegação dentro do cabeçalho -->
+    </header>
+    <main>
+      <!-- Área principal da página -->
+      <!-- Seção de apresentação da Startup Tech -->
+       <section id="apresentacao">
+        <img src="assets/img/bg_apresentacao.jpeg" alt="imagem de apresentação Startup Tech">
+        <!-- Imagem ilustrativa da apresentação Startup Tech -->
+         <!-- Container para o texto da seção de apresentação -->
+          <div>
+            <h2>Startup Tech</h2>
+            <!-- Título principal da empresa -->
+            <h3>O maior pólo de desenvolvimento tecnológico do Brasil</h3>
+            <!-- Subtítulo destacando a proposta da Startup -->
+            <p>
+              " A Startup Tech é uma empresa inovadora focada em umpulsionar negócios por meio de soluções tecnológicas inteligentes."
+            </p>
+            <!-- Primeiro parágrafo apresentando a empresa -->
+            <p>
+              " Especializada no desenvolvimento de websites modernos, consultoria estratégica e infraestrutura em nuvem, nossa missão é fornecer ferramentas eficientes para que startups e empresas de todos os portes possam expandir sua presença digital com segurança, escalabilidade e alto desempenho. "
+            </p>
+            <!-- Segundo parágrafo explicando os serviços da Startup -->
+            <p>
+              " Contamos com uma equipe apaixonada por tecnologia, comprometida em oferecer serviços de qualidade, sempre acompanhando as tendências do mercado para garantir que nossos clientes tenham um diferencial competitivo. "
+            </p>
+            <!-- Terceiro parágrafo enfatizando a expertise da empresa -->
+            <button>Saiba mais</button>
+            <!-- Botão de ação para obter mais informações sobre a empresa -->
+          </div>
+          <!-- Fim do container de texto -->
+      </section>
+      <!-- Fim da seção de apresentação -->
+      <!-- Seção dos cards dos serviços -->
+      <section id="servicos">
+        <h2>Serviços da Startup Tech</h2>
+        <!-- Título da seção de serviços -->
+        <div id="cards">
+          <!-- Contêiner para os cards dos serviços -->
+          <!-- Seção card Desenvolvimento Web -->
+           <div class="card">
+            <img src="assets/img/card-desenvolvimentoweb.png" alt="Ilustração de desenvolvimento web">
+            <h3>Desenvolvimento Web</h3>
+            <!-- Título do card Desenvolvimento Web -->
+            <p>
+              " O serviço de Desenvolvimento Web da Startup Tech cria sites modernos, responsivos e otimizados, garantindo alta performance, usabilidade intuitiva e design inovador para empresas que desejam fortalecer sua presença digital e alcançar novos clientes. "
+            </p>
+            <!-- Descrição do serviço de Desenvolvimento Web -->
+            <button>Saiba mais</button>
+            <!-- Botão de ação para obter mais informações sobre o serviço -->
+           </div>
+           <!-- Fim da Seção card Desenvolvimento Web -->
+           <!-- Seção card Consultoria Tech -->
+           <div class="card">
+            <img src="assets/img/card-consultoriatech.png" alt="Ilustração de consultoria web">
+            <!-- Imagem ilustrativa para o serviço de Consultoria Tech -->
+            <h3>Consultoria Tech</h3>
+            <!-- Título do card Consultoria Tech -->
+            <p>
+              " A Consultoria Tech da Startup Tech oferece soluções estratégicas para empresas, auxiliando na escolha de tecnologias, otimização de processos, segurança digital e inovação, garantindo eficiência, escalabilidade e competitividade no mercado digital. "
+            </p>
+            <!-- Descrição do serviço de Desenvolvimento Web -->
+            <button>Saiba mais</button>
+            <!-- Botão de ação para obter mais informações sobre o serviço -->
+           </div>
+           <!-- Fim da Seção card Consultoria Tech -->
+           <!-- Seção card Infraestrutura Cloud -->
+           <div class="card">
+            <img src="assets/img/card-infraestruturacloud.png" alt="Ilustração de infraestrutura cloud">
+            <!-- Imagem ilustrativa para o serviço de Infraestrutura Cloud -->
+            <h3>Infraestrutura Cloud</h3>
+            <!-- Título do card Infraestrutura Cloud -->
+            <p>
+              " A Infraestrutura Cloud da Startup Tech oferece armazenamento seguro, escalável e de alta performance, garantindo acessibilidade remota, proteção de dados, automação e eficiência para empresas que buscam soluções tecnológicas inovadoras e confiáveis na nuvem. "
+            </p>
+            <!-- Descrição do serviço de Infraestrutura Cloud -->
+            <button>Saiba mais</button>
+            <!-- Botão de ação para obter mais informações sobre o serviço -->
+           </div>
+           <!-- Fim da Seção card Infraestrutura Cloud -->
+           <!-- Seção card Segurança da Informação -->
+           <div class="card">
+            <img src="assets/img/card-segurancadainformacao.png" alt="Ilustração segurança da informação">
+            <!-- Imagem ilustrativa para o serviço de Segurança da Informação -->
+            <h3>Segurança da Informação</h3>
+            <!-- Título do card Segurança da Informação -->
+            <p>
+              " A Segurança da Informação da Startup Tech protege dados e sistemas contra ameaças cibernéticas, garantindo confidencialidade, integridade e disponibilidade. Implementamos criptografia, monitoramento contínuo, autenticação multifator e backups automatizados para máxima proteção. "
+            </p>
+            <!-- Descrição do serviço de Segurança da Informação -->
+            <button>Saiba mais</button>
+            <!-- Botão de ação para obter mais informações sobre o serviço -->
+           </div>
+           <!-- Fim da Seção card Segurança da Informação -->        
+        </div>
+        <!-- Fim da seção para os cards -->
+      </section>
+      <!-- Fim da seção dos cards dos serviços -->
+      <!-- Quem somos -->
+      <section id="quemsomos">
+          <h2>Conheça a equipe Startup Tech</h2>
+          <div id="listadeprofissionais">
+            <a href>
+              <img src="assets/img/equipe-01.jpg" alt="Imagem do funcionário">
+              <p>Lucas Andrade</p>
+            </a>
+            <a href=>
+              <img src="assets/img/equipe-02.jpg" alt="Imagem da funcionária">
+              <p>Fernanda Silva</p>
+            </a>
+            <a href>
+              <img src="assets/img/equipe-03.jpg" alt="Imagem do funcionário">
+              <p>Gustavo de Almeida</p>
+            </a>
+            <a href>
+              <img src="assets/img/equipe-04.jpg" alt="Imagem do funcionário">
+              <p>Rafael Costa</p>
+            </a>
+            <a href>
+              <img src="assets/img/equipe-05.jpg" alt="Imagem do funcionário">
+              <p>Tiago Ferreira</p>
+            </a>
+            <a href>
+              <img src="assets/img/equipe-06.jpg" alt="Imagem da funcionária">
+              <p>Cássia Silveira</p>
+            </a>
+          </div>
+          <!-- Título da seção de apresentação da equipe -->
+          <div class="profissionais">
+            <!-- Contêiner para profissionais da equipe -->
+            <!-- Profissional Lucas Andrade -->
+             <div class="profissional">
+              <img src="assets/img/equipe-01.jpg" alt="Imagem do funcionário">
+              <!--Foto de Lucas Andrade -->
+              <div class="profissional-texto">
+                <h3>Lucas Andrade</h3>
+                <h4>Desenvolvedor Full Stack</h4>
+                <p>
+                  " Atua no desenvolvimento de aplicações web completas, tanto no front-end quanto no back-end. "
+                </p>                    
+              </div>
+              <div class="avaliacao-profissional">
+                <p class="avaliacao-profissional-texto1">Nota</p>
+                <p class="avaliacao-profissional-texto2">10</p>
+                <!-- Nota de avaliação de Lucas Andrade -->
+              </div>
+             </div>
+             <!-- Fim de Avaliação de Lucas Andrade -->
+             <!-- Profissional Fernanda Silva -->
+             <div class="profissional">
+              <img src="assets/img/equipe-02.jpg" alt="Imagem da funcionária">
+              <!--Foto de Fernanda Silva -->
+              <div class="profissional-texto">
+                <h3>Fernanda Silva</h3>
+                <h4>Especialista em UX/UI Design</h4>
+                <p>
+                  " Responsável por criar interfaces intuitivas e agradáveis, garantindo ótima experiência do usuário. "
+                </p>                    
+              </div>
+              <div class="avaliacao-profissional">
+                <p class="avaliacao-profissional-texto1">Nota</p>
+                <p class="avaliacao-profissional-texto2">10</p>
+                <!-- Nota de avaliação de Fernanda Silva -->
+              </div>
+             </div>
+             <!-- Fim de Avaliação de Fernanda Silva -->          
+            <!-- Profissional Gustavo Almeida -->
+            <div class="profissional">
+              <img src="assets/img/equipe-03.jpg" alt="Imagem do funcionário">
+              <!--Foto de Gustavo Almeida -->
+              <div class="profissional-texto">
+                <h3>Gustavo Almeida</h3>
+                <h4>Engenheiro de Software Cloud</h4>
+                <p>
+                  " Desenvolve e mantém soluções de infraestrutura em nuvem escaláveis e seguras. "
+                </p>                    
+              </div>
+              <div class="avaliacao-profissional">
+                <p class="avaliacao-profissional-texto1">Nota</p>
+                <p class="avaliacao-profissional-texto2">10</p>
+                <!-- Nota de avaliação de Gustavo Almeida -->
+              </div>
+               <!-- Fim de Avaliação de Gustavo de Almeida-->
+               <!-- Profissional Rafael Costa -->
+            <div class="profissional">
+              <img src="assets/img/equipe-04.jpg" alt="Imagem do funcionário">
+              <!--Foto de Rafael Costa -->
+              <div class="profissional-texto">
+                <h3>Rafael Costa</h3>
+                <h4>Analista de Segurança da Informação</h4>
+                <p>
+                  " Atua na prevenção e resposta a incidentes de segurança, implementando políticas e ferramentas de proteção. "
+                </p>                    
+              </div>
+              <div class="avaliacao-profissional">
+                <p class="avaliacao-profissional-texto1">Nota</p>
+                <p class="avaliacao-profissional-texto2">10</p>
+                <!-- Nota de avaliação de Rafael Costa -->
+              </div>
+             </div>
+             <!-- Fim de Avaliação de Rafael Costa -->
+             <!-- Profissional Tiago Ferreira -->
+            <div class="profissional">
+              <img src="assets/img/equipe-05.jpg" alt="Imagem do funcionário">
+              <!--Foto de Tiago Ferreira -->
+              <div class="profissional-texto">
+                <h3>Tiago Ferreira</h3>
+                <h4>Especialista em SEO e Otimização Web</h4>
+                <p>
+                  " Trabalha para melhorar o desempenho dos sites e sua visibilidade nos mecanismos de busca. "
+                </p>                    
+              </div>
+              <div class="avaliacao-profissional">
+                <p class="avaliacao-profissional-texto1">Nota</p>
+                <p class="avaliacao-profissional-texto2">10</p>
+                <!-- Nota de avaliação de Tiago Ferreira -->
+              </div>
+             </div>
+             <!-- Fim de Avaliação de Tiago Ferreira -->   
+               <!-- Profissional Cássia Silveira -->
+            <div class="profissional">
+              <img src="assets/img/equipe-06.jpg" alt="Imagem da funcionária">
+              <!--Foto de Cássia Silveira -->
+              <div class="profissional-texto">
+                <h3>Cássia Silveira</h3>
+                <h4>Especialista em UX/UI</h4>
+                <p>
+                  " Responsável por criar interfaces intuitivas e agradáveis, garantindo ótima experiência do usuário. "
+                </p>                    
+              </div>
+              <div class="avaliacao-profissional">
+                <p class="avaliacao-profissional-texto1">Nota</p>
+                <p class="avaliacao-profissional-texto2">10</p>
+                <!-- Nota de avaliação de Tiago Ferreira -->
+              </div>
+             </div>       
+          </div>
+      </section>
+    </main>
+    
+    <footer></footer>
+  </body>
+</html>
